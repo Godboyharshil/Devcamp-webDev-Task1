@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Log in or Sign up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Spotify</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Premium</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+
+    <div id="auth-container" class="flex-row">
+
+      <section class="auth-section" id="signup">
+        <h2>Sign up free</h2>
+        <p>Create your Spotify account.</p>
+
+        <form class="auth-form" action="#" method="post">
+
+          <div class="form-group">
+            <label for="signup-email">Email address</label>
+            <input
+              type="email"
+              id="signup-email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="signup-name">What should we call you?</label>
+            <input
+              type="text"
+              id="signup-name"
+              name="displayname"
+              placeholder="Profile name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="signup-password">Create a password</label>
+            <input
+              type="password"
+              id="signup-password"
+              name="password"
+              placeholder="Create a password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="signup-dob">Date of birth</label>
+            <input
+              type="date"
+              id="signup-dob"
+              name="dob"
+              required
+            />
+          </div>
+
+          <fieldset class="form-group">
+            <legend>Gender</legend>
+            <label>
+              <input type="radio" name="gender" value="man" required />
+              Man
+            </label>
+            <label>
+              <input type="radio" name="gender" value="woman" />
+              Woman
+            </label>
+            <label>
+              <input type="radio" name="gender" value="nonbinary" />
+              Non-binary
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Other
+            </label>
+          </fieldset>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">
+              I'd like to receive news and offers from Spotify.
+            </label>
+          </div>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="agree-terms" name="terms" required />
+            <label for="agree-terms">
+              I agree to Spotify's
+              <a href="#">Terms and Conditions of Use</a> and
+              <a href="#">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Create account
+          </button>
+
+        </form>
+
+        <p class="auth-switch">
+          Already have an account? <a href="login.html">Log in</a>
+        </p>
+      </section>
+      
+    </div>
+
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-cols flex-row">
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Communities</h3>
+        <ul>
+          <li><a href="#">For Artists</a></li>
+          <li><a href="#">Developers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr />
+    <p class="footer-copy">&copy; 2026 Spotify AB</p>
+  </footer>
+
+</body>
+</html>
